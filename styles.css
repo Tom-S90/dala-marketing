@@ -84,9 +84,19 @@
   color: #000000;
 }
 
-.button-top-left:hover, .button-top-right:hover {
+.button-top-left:hover, .button-top-right:hover .button-bottom-left:hover .button-bottom-right:hover{
   transform: translateY(-3px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.button-bottom-left{
+  background-color: #faa94a;
+  color: #000000;
+}
+
+.button-bottom-right{
+  background-color: #000000;
+  color: #f0f0f0;
 }
 
 /* Service cards */
