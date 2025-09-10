@@ -16,14 +16,14 @@
     <div class="max-w-6xl mx-auto px-4 flex items-center justify-between h-16">
       <div class="font-serif text-2xl">DALA<span class="ml-1 inline-block align-middle w-3 h-3 rounded-full" style="background:#faa94a"></span></div>
       <nav class="hidden md:flex gap-6 text-sm">
-        <a href="#inicio" class="hover:text-[#faa94a]">Inicio</a>
-        <a href="#quienes" class="hover:text-[#faa94a]">Quiénes somos</a>
-        <a href="#servicios" class="hover:text-[#faa94a]">Servicios</a>
-        <a href="#portafolio" class="hover:text-[#faa94a]">Portafolio</a>
-        <a href="#clientes" class="hover:text-[#faa94a]">Clientes</a>
-        <a href="#cursos" class="hover:text-[#faa94a]">Cursos</a>
-        <a href="#radio" class="hover:text-[#faa94a]">Radio</a>
-        <a href="#contacto" class="hover:text-[#faa94a]">Contacto</a>
+        <a href="#inicio" class="nav-button">Inicio</a>
+        <a href="#quienes" class="nav-button">Quiénes somos</a>
+        <a href="#servicios" class="nav-button">Servicios</a>
+        <a href="#portafolio" class="nav-button">Portafolio</a>
+        <a href="#clientes" class="nav-button">Clientes</a>
+        <a href="#cursos" class="nav-button">Cursos</a>
+        <a href="#radio" class="nav-button">Radio</a>
+        <a href="#contacto" class="nav-button">Contacto</a>
       </nav>
     </div>
   </header>
@@ -35,8 +35,8 @@
           <h1 class="text-4xl md:text-5xl font-serif leading-tight">Creatividad que <span style="color:#faa94a">convierte</span></h1>
           <p class="mt-4 text-[#a6a6a6]">Identidad, contenido y campañas con métricas claras para que tu negocio crezca en Mérida.</p>
           <div class="mt-6 flex flex-wrap gap-3">
-            <a href="#portafolio" class="btn" style="background:#faa94a;color:#000">Ver portafolio</a>
-            <a href="https://wa.me/529993960502?text=Hola%20DALA%20MKT%2C%20quiero%20impulsar%20mi%20marca%20en%20redes.&utm_source=preview&utm_medium=hero&utm_campaign=cta" class="btn border bg-white text-black">Escríbenos por Whats</a>
+            <a href="#portafolio" class="button-top-left">Ver portafolio</a>
+            <a href="https://wa.me/529993960502?text=Hola%20DALA%20MKT%2C%20quiero%20impulsar%20mi%20marca%20en%20redes.&utm_source=preview&utm_medium=hero&utm_campaign=cta" class="button-top-right">Escríbenos por Whats</a>
           </div>
           <ul class="mt-6 text-sm text-[#a6a6a6] space-y-1">
             <li>↳ [Ejemplo] CPC desde $0.55 MXN y 633 clics.</li>
@@ -68,7 +68,7 @@
               <li>Logo y concepto</li><li>Papelería</li><li>Guías de uso</li>
             </ul>
           </div>
-          <div class="rounded-2xl shadow-sm border bg-white p-6">
+          <div class="flip-horizontal-bottom">
             <h3 class="font-serif text-xl mb-2">Publicidad pagada (Meta/Google)</h3>
             <ul class="list-disc pl-5 text-neutral-700">
               <li>Estrategia y segmentación</li><li>Optimización y A/B</li><li>Reporte mensual</li>
@@ -164,19 +164,8 @@
 
     <section id="contacto" class="py-16 md:py-20 bg-neutral-50">
       <div class="max-w-6xl mx-auto px-4">
-        <h2 class="text-3xl font-serif">Contacto</h2>
-        <form class="grid md:grid-cols-2 gap-4 mt-6" onsubmit="alert('¡Gracias! Responderemos pronto.'); return false;">
-          <div><label class="text-sm block">Nombre<input required class="mt-1 w-full rounded-xl border px-3 py-2"/></label></div>
-          <div><label class="text-sm block">Empresa<input class="mt-1 w-full rounded-xl border px-3 py-2"/></label></div>
-          <div><label class="text-sm block">Email<input type="email" required class="mt-1 w-full rounded-xl border px-3 py-2"/></label></div>
-          <div><label class="text-sm block">Teléfono<input class="mt-1 w-full rounded-xl border px-3 py-2"/></label></div>
-          <div class="md:col-span-2"><label class="text-sm block">Mensaje<textarea required class="mt-1 w-full rounded-xl border px-3 py-2 h-28"></textarea></label></div>
-          <label class="md:col-span-2 inline-flex items-start gap-2 text-sm"><input type="checkbox" required class="mt-1">Acepto el consentimiento.</label>
-          <div class="md:col-span-2">
-            <button class="px-5 py-3 rounded-2xl font-medium" style="background:#faa94a;color:#000">Enviar</button>
-            <a class="text-sm underline ml-3" href="https://wa.me/529993960502?text=Hola%20DALA%20MKT%2C%20necesito%20asesor%C3%ADa.&utm_source=preview&utm_medium=contact&utm_campaign=cta">o WhatsApp</a>
-          </div>
-        </form>
+        <iframe data-tally-src="https://tally.so/embed/w7QD79?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="439" frameborder="0" marginheight="0" marginwidth="0" title="Contacto"></iframe>
+        <script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
       </div>
     </section>
   </main>

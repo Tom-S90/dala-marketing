@@ -1,0 +1,41 @@
+.nav-button {
+    padding: 15px 20px;
+    background-color: #fdfdfd;
+    color: black;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+    border: 2px solid transparent;
+    text-align: center;
+    display: inline-block;
+    box-sizing: border-box;
+    opacity: 0;
+    animation: fadeIn 0.5s ease-out forwards;
+}
+
+.nav-button:hover {
+    background-color: #faa94a;
+    transform: translateY(-3px) scale(1.05);
+    border: 2px solid #000000;
+}
+
+.nav-button:active {
+    transform: translateY(0) scale(1);
+    box-shadow: none;
+}
+
+.button-top-left{
+    width: 70px; 
+    border-radius: 25px;
+    background-color: #faa94a;
+    color:#000000;
+}
+
+.button-top-right{
+    width: 100px; 
+    border-radius: 25px;
+    background-color: #fdfdfd;
+    color:#000000;
+}
+
+.flip-horizontal-bottom{-webkit-animation:flip-horizontal-bottom .4s cubic-bezier(.455,.03,.515,.955) both;animation:flip-horizontal-bottom .4s cubic-bezier(.455,.03,.515,.955) both}
