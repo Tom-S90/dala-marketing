@@ -7,11 +7,6 @@
   <meta name="description" content="Vista previa estática de la landing de DALA MKT.">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="styles.css">
-
-  <style>
-    :root{ --c-black:#000; --c-white:#fff; --c-gray:#a6a6a6; --c-orange:#faa94a; }
-    .btn { @apply inline-flex items-center justify-center rounded-2xl px-5 py-3 font-medium transition; }
-  </style>
 </head>
 <body class="bg-white text-black antialiased">
   <header class="sticky top-0 z-50 bg-white/80 backdrop-blur border-b">
@@ -63,35 +58,32 @@
     <section id="servicios" class="py-16 md:py-20 bg-neutral-50">
       <div class="max-w-6xl mx-auto px-4">
         <h2 class="text-3xl font-serif">Servicios</h2>
-        <div class="mt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          <div class="rounded-2xl shadow-sm border bg-white p-6">
+        <div class="mt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-3 services-grid">
+          <div class="service-card">
             <h3 class="font-serif text-xl mb-2">Branding e identidad</h3>
             <ul class="list-disc pl-5 text-neutral-700">
               <li>Logo y concepto</li><li>Papelería</li><li>Guías de uso</li>
             </ul>
           </div>
 
-          
-
-          <div class="rounded-2xl shadow-sm border bg-white p-6 flip-card">
+          <div class="service-card flip-card">
             <div class="flip-card-inner">
-              <div class="flip-front">
+              <div class="flip-card-front">
                 <h3 class="font-serif text-xl mb-2">Publicidad pagada (Meta/Google)</h3>
+                <p class="mt-2 text-sm text-neutral-600">Haz clic o pasa el cursor para más detalles</p>
               </div>
-              <div class="flip-back">
-                <div>
-                  <ul class="list-disc pl-5 text-neutral-700">
-                    <li>Estrategia y segmentación</li>
-                    <li>Optimización y A/B</li>
-                    <li>Reporte mensual</li>
-                  </ul>
-                </div>
+              <div class="flip-card-back">
+                <h3 class="font-serif text-xl mb-2">Publicidad pagada (Meta/Google)</h3>
+                <ul class="list-disc pl-5 text-neutral-700">
+                  <li>Estrategia y segmentación</li>
+                  <li>Optimización y A/B</li>
+                  <li>Reporte mensual</li>
+                </ul>
               </div>
             </div>
           </div>
 
-
-          <div class="rounded-2xl shadow-sm border bg-white p-6">
+          <div class="service-card">
             <h3 class="font-serif text-xl mb-2">Manejo de redes sociales</h3>
             <ul class="list-disc pl-5 text-neutral-700">
               <li>Planeación y calendario</li>
@@ -100,24 +92,21 @@
             </ul>
           </div>
 
-
-          
-
-
-
-          <div class="rounded-2xl shadow-sm border bg-white p-6">
+          <div class="service-card">
             <h3 class="font-serif text-xl mb-2">Foto y video profesionales</h3>
             <ul class="list-disc pl-5 text-neutral-700">
               <li>Producto/espacio</li><li>Reels</li><li>UGC</li>
             </ul>
           </div>
-          <div class="rounded-2xl shadow-sm border bg-white p-6">
+          
+          <div class="service-card">
             <h3 class="font-serif text-xl mb-2">Spots en radio</h3>
             <ul class="list-disc pl-5 text-neutral-700">
               <li>Creatividad y guion</li><li>Locución</li><li>Coordinación</li>
             </ul>
           </div>
-          <div class="rounded-2xl shadow-sm border bg-white p-6">
+          
+          <div class="service-card">
             <h3 class="font-serif text-xl mb-2">Cursos para emprendedores</h3>
             <ul class="list-disc pl-5 text-neutral-700">
               <li>Workshops prácticos</li><li>Plantillas</li><li>Mentoría grupal</li>
@@ -197,7 +186,7 @@
 
   <a href="https://wa.me/529993960502?text=Hola%20DALA%20MKT%2C%20me%20gustar%C3%ADa%20cotizar%20manejo%20de%20redes.&utm_source=preview&utm_medium=fab&utm_campaign=whatsapp"
      aria-label="WhatsApp"
-     class="fixed right-4 bottom-4 shadow-lg rounded-full p-4 md:p-5"
+     class="whatsapp-fab"
      style="background:#faa94a;color:#000">
     ☎︎
   </a>
