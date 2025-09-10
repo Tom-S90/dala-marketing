@@ -12,6 +12,14 @@
   <header class="sticky top-0 z-50 bg-white/80 backdrop-blur border-b">
     <div class="max-w-6xl mx-auto px-4 flex items-center justify-between h-16">
       <div class="font-serif text-2xl">DALA<span class="ml-1 inline-block align-middle w-3 h-3 rounded-full" style="background:#faa94a"></span></div>
+      
+      <!-- Mobile menu button -->
+      <button class="md:hidden mobile-menu-btn" aria-label="Abrir menú">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+      
       <nav class="hidden md:flex gap-6 text-sm">
         <a href="#inicio" class="nav-button">Inicio</a>
         <a href="#quienes" class="nav-button">Quiénes somos</a>
@@ -22,6 +30,20 @@
         <a href="#radio" class="nav-button">Radio</a>
         <a href="#contacto" class="nav-button">Contacto</a>
       </nav>
+    </div>
+    
+    <!-- Mobile menu (hidden by default) -->
+    <div class="mobile-menu hidden md:hidden bg-white border-t">
+      <div class="max-w-6xl mx-auto px-4 py-4 flex flex-col gap-4">
+        <a href="#inicio" class="nav-button-mobile">Inicio</a>
+        <a href="#quienes" class="nav-button-mobile">Quiénes somos</a>
+        <a href="#servicios" class="nav-button-mobile">Servicios</a>
+        <a href="#portafolio" class="nav-button-mobile">Portafolio</a>
+        <a href="#clientes" class="nav-button-mobile">Clientes</a>
+        <a href="#cursos" class="nav-button-mobile">Cursos</a>
+        <a href="#radio" class="nav-button-mobile">Radio</a>
+        <a href="#contacto" class="nav-button-mobile">Contacto</a>
+      </div>
     </div>
   </header>
 
@@ -50,13 +72,15 @@
 
     <section id="quienes" class="py-16 md:py-20">
       <div class="max-w-6xl mx-auto px-4">
-        <h2 class="text-3xl font-serif">¿Quiénes somos?</h2>
+        <h2 class="text-3xl font-serif">Quiénes somos</h2>
         <p class="mt-4 text-lg text-neutral-700">Equipo con <strong>7 años de experiencia</strong> en imagen y publicidad digital. Estrategias de contenido que conectan y generan resultados reales para PYMEs de Mérida.</p>
       </div>
     </section>
 
     <section id="servicios" class="py-16 md:py-20 bg-neutral-50">
       <div class="max-w-6xl mx-auto px-4">
+        <h2 class="text-3xl font-serif">Servicios</h2>
+        <div class="mt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-3 services-grid">
           <div class="service-card flip-card">
             <div class="flip-card-inner">
               <div class="flip-card-front">
@@ -140,20 +164,31 @@
             </div>
           </div>
         </div>
+      </div>
     </section>
 
     <section id="portafolio" class="py-16 md:py-20 bg-neutral-50">
       <div class="max-w-6xl mx-auto px-4">
         <h2 class="text-3xl font-serif">Portafolio</h2>
-        <details class="rounded-2xl border bg-white p-4 mt-4">
-          <summary class="cursor-pointer font-medium">Rapidcolecta</summary>
-          <div class="mt-3">
+        <details class="portfolio-item">
+          <summary class="portfolio-summary">
+            <span>Rapidcolecta</span>
+            <svg class="dropdown-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+            </svg>
+          </summary>
+          <div class="portfolio-content">
             <img src="https://placehold.co/800x450/orange/000?text=Trabajo+1" alt="Trabajo 1" class="rounded-lg w-full aspect-video object-cover"/>
           </div>
         </details>
-        <details class="rounded-2xl border bg-white p-4 mt-4">
-          <summary class="cursor-pointer font-medium">Susulá Departamentos</summary>
-          <div class="mt-3">
+        <details class="portfolio-item">
+          <summary class="portfolio-summary">
+            <span>Susulá Departamentos</span>
+            <svg class="dropdown-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+            </svg>
+          </summary>
+          <div class="portfolio-content">
             <img src="https://placehold.co/800x450/fff/000?text=Trabajo+1" alt="Trabajo 1" class="rounded-lg w-full aspect-video object-cover"/>
           </div>
         </details>
@@ -205,9 +240,17 @@
     <section id="contacto" class="py-16 md:py-20 bg-neutral-50">
       <div class="max-w-6xl mx-auto px-4">
         <div class="tally-container">
-          <iframe data-tally-src="https://tally.so/embed/w7QD79?alignLeft=1&hideTitle=1&dynamicHeight=1" ...></iframe>
+          <iframe data-tally-src="https://tally.so/embed/w7QD79?alignLeft=1&hideTitle=1&dynamicHeight=1" loading="lazy" width="100%" height="439" frameborder="0" marginheight="0" marginwidth="0" title="Contacto"></iframe>
         </div>
-        <script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
+        <script>
+          var d=document,w="https://tally.so/widgets/embed.js",v=function(){
+            "undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))
+          };
+          if("undefined"!=typeof Tally)v();
+          else if(d.querySelector('script[src="'+w+'"]')==null){
+            var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);
+          }
+        </script>
       </div>
     </section>
   </main>
@@ -237,5 +280,41 @@
     </div>
     <div class="text-center text-xs text-[#a6a6a6] py-4 border-t border-white/10">© 2025 DALA MKT.</div>
   </footer>
+
+  <script>
+    // Mobile menu functionality
+    document.addEventListener('DOMContentLoaded', function() {
+      const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+      const mobileMenu = document.querySelector('.mobile-menu');
+      
+      if (mobileMenuBtn && mobileMenu) {
+        mobileMenuBtn.addEventListener('click', function() {
+          mobileMenu.classList.toggle('hidden');
+          mobileMenu.classList.toggle('active');
+        });
+        
+        // Close menu when clicking outside
+        document.addEventListener('click', function(event) {
+          if (!event.target.closest('.mobile-menu') && 
+              !event.target.closest('.mobile-menu-btn') &&
+              mobileMenu.classList.contains('active')) {
+            mobileMenu.classList.add('hidden');
+            mobileMenu.classList.remove('active');
+          }
+        });
+      }
+      
+      // Portfolio animations
+      const portfolioItems = document.querySelectorAll('.portfolio-item');
+      portfolioItems.forEach(item => {
+        item.addEventListener('toggle', function() {
+          if (this.open) {
+            const content = this.querySelector('.portfolio-content');
+            content.style.animation = 'fadeIn 0.5s ease forwards';
+          }
+        });
+      });
+    });
+  </script>
 </body>
 </html>

@@ -43,6 +43,23 @@
   box-shadow: none;
 }
 
+/* Mobile nav buttons */
+.nav-button-mobile {
+  padding: 12px 16px;
+  background-color: #f8f8f8;
+  color: black;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  display: block;
+}
+
+.nav-button-mobile:hover {
+  background-color: #faa94a;
+}
+
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
@@ -151,6 +168,11 @@
   border: 1px solid #e5e5e5;
 }
 
+/* Ensure all service cards have equal height */
+.services-grid > * {
+  display: flex;
+}
+
 /* WhatsApp FAB */
 .whatsapp-fab {
   position: fixed;
@@ -164,6 +186,7 @@
   justify-content: center;
   text-decoration: none;
   transition: all 0.3s ease;
+  z-index: 40;
 }
 
 .whatsapp-fab:hover {
@@ -171,8 +194,104 @@
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
 }
 
-.services-grid > * {
+/* Rounded Tally iframe container */
+.tally-container {
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Portfolio animations */
+.portfolio-item {
+  border-radius: 1rem;
+  border: 1px solid #e5e5e5;
+  background-color: white;
+  margin-top: 1rem;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.portfolio-item[open] {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-summary {
+  padding: 1.5rem;
+  cursor: pointer;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  list-style: none; /* Remove default arrow in Firefox */
+  transition: background-color 0.3s ease;
+}
+
+.portfolio-summary:hover {
+  background-color: #f8f8f8;
+}
+
+.portfolio-summary::-webkit-details-marker {
+  display: none; /* Remove default arrow in Chrome */
+}
+
+.dropdown-arrow {
+  width: 1.25rem;
+  height: 1.25rem;
+  transition: transform 0.3s ease;
+}
+
+.portfolio-item[open] .dropdown-arrow {
+  transform: rotate(180deg);
+}
+
+.portfolio-content {
+  padding: 0 1.5rem 1.5rem;
+  animation: fadeIn 0.5s ease forwards;
+}
+
+/* Mobile menu styles */
+.mobile-menu-btn {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .mobile-menu-btn {
+    display: block;
+  }
+  
+  .mobile-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+  }
+  
+  .mobile-menu.active {
+    display: block;
+  }
+}
+
+/* Additional animations */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .tally-container {
