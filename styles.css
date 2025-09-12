@@ -325,3 +325,87 @@
   height: 100%;
   object-fit: cover;
 }
+
+/* Estilos para la sección de clientes - 2x5 grid */
+.clients-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.client-logo {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  border: 1px solid #e5e5e5;
+  background-color: white;
+  transition: all 0.3s ease;
+}
+
+.client-logo:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.client-logo img {
+  max-height: 60px;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Responsive para clientes */
+@media (max-width: 1024px) {
+  .clients-grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+  }
+}
+
+@media (max-width: 640px) {
+  .clients-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Estilos para la sección de portafolio - imágenes más pequeñas */
+.portfolio-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  padding: 1.5rem 0;
+}
+
+.portfolio-content img,
+.portfolio-content video {
+  width: 100%;
+  max-height: 60vh; /* No más alto que el 60% de la ventana */
+  object-fit: cover;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.portfolio-content img:hover,
+.portfolio-content video:hover {
+  transform: scale(1.02);
+}
+
+/* Responsive para portafolio */
+@media (max-width: 768px) {
+  .portfolio-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .portfolio-content img,
+  .portfolio-content video {
+    max-height: 50vh;
+  }
+}
