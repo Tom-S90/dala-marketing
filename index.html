@@ -6,9 +6,8 @@
   <title>DALA MKT — Vista previa</title>
   <meta name="description" content="Vista previa estática de la landing de DALA MKT.">
   <script src="https://cdn.tailwindcss.com"></script>
-  <style src="styles.css"></style>
   <script src="script.js"></script>
-
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body class="bg-white text-black antialiased">
   <header class="sticky top-0 z-50 bg-white backdrop-blur border-b">
@@ -74,6 +73,13 @@
             <li>↳ Reporte de métricas mensual para decidir próximos pasos.</li>
           </ul>
         </div>
+        <div class="relative">
+        <!--<div class="relative">
+          <div class="aspect-video rounded-2xl bg-neutral-800/70 grid place-items-center backdrop-blur-sm">
+            <span class="text-sm text-neutral-200">Vista previa del video</span>
+          </div>
+        </div>
+        </div>-->
       </div>
     </section>
 
@@ -178,9 +184,10 @@
       <div class="max-w-6xl mx-auto px-4">
         <h2 class="text-3xl font-serif">Portafolio</h2>
         
-        <!-- Videos Portfolio Item -->
+        <!-- Rapidcolecta Portfolio Item -->
         <details class="portfolio-item">
           <summary class="portfolio-summary">
+            <span>Rapidcolecta</span>
             <span>Videos</span>
             <svg class="dropdown-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
               <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
@@ -191,83 +198,113 @@
               <source src="Fondre 5.webm" type="video/webm">
               Tu navegador no soporta el elemento de video.
             </video>
-            <video class="rounded-lg w-full aspect-video object-cover mt-4" controls>
+          </div>
+        </details>
+        
+        <!-- Susulá Departamentos Portfolio Item -->
+        <details class="portfolio-item">
+          <summary class="portfolio-summary">
+            <span>Susulá Departamentos</span>
+            <svg class="dropdown-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+            </svg>
+          </summary>
+          <div class="portfolio-content">
+            <video class="rounded-lg w-full aspect-video object-cover" controls>
+              <source src="susula-video.webm" type="video/webm">
               <source src="Fondre 7.webm" type="video/webm">
+              Tu navegador no soporta el elemento de video.
+            </video>
+            <video class="rounded-lg w-full aspect-video object-cover" controls>
+              <source src="" type="video/webm">
               Tu navegador no soporta el elemento de video.
             </video>
           </div>
         </details>
         
-        <!-- Fotografía Portfolio Item -->
+        <!-- Additional portfolio items with videos -->
+        <!-- Susulá Departamentos Portfolio Item -->
         <details class="portfolio-item">
           <summary class="portfolio-summary">
+            <span>Proyecto Café</span>
             <span>Fotografía</span>
             <svg class="dropdown-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
               <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
             </svg>
           </summary>
           <div class="portfolio-content">
-            <div class="portfolio-gallery">
-              <img src="IMG_0337.webp" alt="Fotografía 1" class="portfolio-image">
-              <img src="IMG_0641.webp" alt="Fotografía 2" class="portfolio-image">
-              <img src="IMG_1685.webp" alt="Fotografía 3" class="portfolio-image">
-              <img src="IMG_1710.webp" alt="Fotografía 4" class="portfolio-image">
-            </div>
+            <video class="rounded-lg w-full aspect-video object-cover" controls>
+              <source src="cafe-video.webm" type="video/webm">
+              Tu navegador no soporta el elemento de video.
+            </video>
+            <img src="IMG_0337.webp">
+            <img src="IMG_0641.webp">
+            <img src="IMG_1685.webp">
+            <img src="IMG_1710.webp">
           </div>
         </details>
         
-        <!-- Diseño Portfolio Item -->
+        <!-- Additional portfolio items with videos -->
         <details class="portfolio-item">
           <summary class="portfolio-summary">
+            <span>Hotel Proyect</span>
             <span>Diseño</span>
             <svg class="dropdown-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
               <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
             </svg>
           </summary>
           <div class="portfolio-content">
-            <div class="portfolio-gallery">
-              <img src="Imagen de WhatsApp 2025-09-11 a las 13.55.01_954bacab.webp" alt="Diseño 1" class="portfolio-image">
-              <img src="Imagen de WhatsApp 2025-09-11 a las 13.59.08_4ff118f6.webp" alt="Diseño 2" class="portfolio-image">
-            </div>
+            <video class="rounded-lg w-full aspect-video object-cover" controls>
+              <source src="hotel-video.webm" type="video/webm">
+              Tu navegador no soporta el elemento de video.
+            </video>
+            <img src="Imagen de WhatsApp 2025-09-11 a las 13.55.01_954bacab.webp">
+            <img src="Imagen de WhatsApp 2025-09-11 a las 13.59.08_4ff118f6.webp">
           </div>
         </details>
+
       </div>
     </section>
 
-    <section id="clientes" class="py-16 md:py-20">
-      <div class="max-w-6xl mx-auto px-4">
-        <h2 class="text-3xl font-serif">Clientes</h2>
-        <div class="clients-grid mt-6">
-          <!-- Client logos -->
-          <div class="client-item">
-            <img src="Client1.webp" alt="Rapidcolecta" class="client-logo">
+
+@@ -252,470 +245,115 @@
+        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6 mt-6">
+          <!-- Replace text with client logos -->
+          <div class="h-20 grid place-items-center rounded-2xl border p-4 bg-white">
+            <img src="rapidcolecta-logo.png" alt="Rapidcolecta" class="max-h-12 max-w-full object-contain">
+            <img src="Client1.webp" alt="Rapidcolecta" class="max-h-12 max-w-full object-contain">
           </div>
-          <div class="client-item">
-            <img src="Client2.webp" alt="Susulá" class="client-logo">
+          <div class="h-20 grid place-items-center rounded-2xl border p-4 bg-white">
+            <img src="Client2.webp" alt="Susulá" class="max-h-12 max-w-full object-contain">
           </div>
-          <div class="client-item">
-            <img src="Client3.webp" alt="Café" class="client-logo">
+          <div class="h-20 grid place-items-center rounded-2xl border p-4 bg-white">
+            <img src="susula-logo.png" alt="Susulá" class="max-h-12 max-w-full object-contain">
+            <img src="Client3.webp" alt="Café" class="max-h-12 max-w-full object-contain">
           </div>
-          <div class="client-item">
-            <img src="Client4.webp" alt="Hotel" class="client-logo">
+          <div class="h-20 grid place-items-center rounded-2xl border p-4 bg-white">
+            <img src="cafe-logo.png" alt="Café" class="max-h-12 max-w-full object-contain">
+            <img src="Client4.webp" alt="Hotel" class="max-h-12 max-w-full object-contain">
           </div>
-          <div class="client-item">
-            <img src="Client5.webp" alt="Cliente 5" class="client-logo">
+          <div class="h-20 grid place-items-center rounded-2xl border p-4 bg-white">
+            <img src="hotel-logo.png" alt="Hotel" class="max-h-12 max-w-full object-contain">
+            <img src="Client5.webp" alt="Cliente 5" class="max-h-12 max-w-full object-contain">
           </div>
-          <div class="client-item">
-            <img src="Client6.webp" alt="Cliente 6" class="client-logo">
+          <div class="h-20 grid place-items-center rounded-2xl border p-4 bg-white">
+            <img src="cliente5-logo.png" alt="Cliente 5" class="max-h-12 max-w-full object-contain">
+            <img src="Client6.webp" alt="Cliente 6" class="max-h-12 max-w-full object-contain">
           </div>
-          <div class="client-item">
-            <img src="Client7.webp" alt="Cliente 7" class="client-logo">
+          <div class="h-20 grid place-items-center rounded-2xl border p-4 bg-white">
+            <img src="cliente6-logo.png" alt="Cliente 6" class="max-h-12 max-w-full object-contain">
+            <img src="Client7.webp" alt="Rapidcolecta" class="max-h-12 max-w-full object-contain">
           </div>
-          <div class="client-item">
-            <img src="Client8.webp" alt="Cliente 8" class="client-logo">
+          <div class="h-20 grid place-items-center rounded-2xl border p-4 bg-white">
+            <img src="Client8.webp" alt="Susulá" class="max-h-12 max-w-full object-contain">
           </div>
-          <div class="client-item">
-            <img src="Client9.webp" alt="Cliente 9" class="client-logo">
+          <div class="h-20 grid place-items-center rounded-2xl border p-4 bg-white">
+            <img src="Client9.webp" alt="Café" class="max-h-12 max-w-full object-contain">
           </div>
-          <div class="client-item">
-            <img src="Client10.webp" alt="Cliente 10" class="client-logo">
+          <div class="h-20 grid place-items-center rounded-2xl border p-4 bg-white">
+            <img src="Client10.webp" alt="Hotel" class="max-h-12 max-w-full object-contain">
           </div>
         </div>
       </div>
@@ -279,11 +316,15 @@
         <div class="grid md:grid-cols-2 gap-6 mt-6">
           <div class="rounded-2xl border bg-white p-6">
             <h3 class="font-serif text-xl">Workshop: Redes que venden</h3>
+            <p class="text-neutral-700 mt-2">Estrategia, calendario, pauta y medición. Incluye plantillas.</p>
+            <a href="#contacto" class="inline-block mt-4 px-5 py-3 rounded-2xl font-medium button-bottom-left" style="background:#faa94a;color:#000">Solicitar info</a>
             <p class="text-neutral-700 mt-2">Aprende a construir una identidad de marca sólida, crear estrategias efectivas y organizar tu contenido con calendario, pauta y métricas claras. Incluye plantillas listas para usar</p>
             <a href="#contacto" class="inline-block mt-4 px-5 py-3 rounded-2xl font-medium button-bottom-left" style="background:#faa94a;color:#000">Quiero vender con mis redes!</a>
           </div>
           <div class="rounded-2xl border bg-white p-6">
             <h3 class="font-serif text-xl">Mini-curso: Anuncios en Meta</h3>
+            <p class="text-neutral-700 mt-2">Configura campañas orientadas a objetivos (CPC, CTR, Alcance).</p>
+            <a href="#contacto" class="inline-block mt-4 px-5 py-3 rounded-2xl font-medium bg-black text-white button-bottom-right">Quiero aprender</a>
             <p class="text-neutral-700 mt-2">Aprende a configurar campañas orientadas a objetivos y domina métricas clave como CPC, CTR y Alcance para obtener mejores resultados.</p>
             <a href="#contacto" class="inline-block mt-4 px-5 py-3 rounded-2xl font-medium bg-black text-white button-bottom-right">Quiero aprender!</a>
           </div>
@@ -350,6 +391,6 @@
     </div>
     <div class="text-center text-xs text-[#a6a6a6] py-4 border-t border-white/10">© 2025 DALA MKT.</div>
   </footer>
-
+  
 </body>
 </html>

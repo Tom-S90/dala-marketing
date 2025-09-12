@@ -257,8 +257,6 @@
 .portfolio-content {
   padding: 0 1.5rem 1.5rem;
   animation: fadeIn 0.5s ease forwards;
-  max-height: 70vh; /* Limit height to 70% of viewport */
-  overflow-y: auto; /* Add scroll if content exceeds max height */
 }
 
 /* Mobile menu styles */
@@ -311,7 +309,8 @@
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
-    
+
+/* Video background for hero section */
 .video-background {
   position: absolute;
   top: 0;
@@ -321,66 +320,9 @@
   z-index: -1;
   overflow: hidden;
 }
-    
+
 .video-background video {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-}
-
-/* Client logos grid */
-.clients-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.5rem;
-}
-
-@media (min-width: 768px) {
-  .clients-grid {
-    grid-template-columns: repeat(5, 1fr);
-  }
-}
-
-.client-logo {
-  height: 100%;
-  width: 100%;
-  object-fit: contain;
-  padding: 1rem;
-}
-
-.client-item {
-  aspect-ratio: 1/1; /* Make all client items square */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: white;
-  border-radius: 1rem;
-  border: 1px solid #e5e5e5;
-  overflow: hidden;
-}
-
-/* Portfolio gallery grid */
-.portfolio-gallery {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 1rem;
-}
-
-@media (min-width: 640px) {
-  .portfolio-gallery {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (min-width: 1024px) {
-  .portfolio-gallery {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-.portfolio-image {
-  width: 100%;
-  height: auto;
-  border-radius: 0.5rem;
   object-fit: cover;
 }
