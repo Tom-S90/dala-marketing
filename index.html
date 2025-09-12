@@ -6,6 +6,7 @@
   <title>DALA MKT — Vista previa</title>
   <meta name="description" content="Vista previa estática de la landing de DALA MKT.">
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="script.js"></script>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body class="bg-white text-black antialiased">
@@ -72,11 +73,11 @@
             <li>↳ Reporte de métricas mensual para decidir próximos pasos.</li>
           </ul>
         </div>
-        <div class="relative">
+        <!--<div class="relative">
           <div class="aspect-video rounded-2xl bg-neutral-800/70 grid place-items-center backdrop-blur-sm">
             <span class="text-sm text-neutral-200">Vista previa del video</span>
           </div>
-        </div>
+        </div>-->
       </div>
     </section>
 
@@ -184,7 +185,7 @@
         <!-- Rapidcolecta Portfolio Item -->
         <details class="portfolio-item">
           <summary class="portfolio-summary">
-            <span>Rapidcolecta</span>
+            <span>Videos</span>
             <svg class="dropdown-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
               <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
             </svg>
@@ -194,55 +195,47 @@
               <source src="Fondre 5.webm" type="video/webm">
               Tu navegador no soporta el elemento de video.
             </video>
+            <video class="rounded-lg w-full aspect-video object-cover" controls>
+              <source src="Fondre 7.webm" type="video/webm">
+              Tu navegador no soporta el elemento de video.
+            </video>
+            <video class="rounded-lg w-full aspect-video object-cover" controls>
+              <source src="" type="video/webm">
+              Tu navegador no soporta el elemento de video.
+            </video>
           </div>
         </details>
         
         <!-- Susulá Departamentos Portfolio Item -->
         <details class="portfolio-item">
           <summary class="portfolio-summary">
-            <span>Susulá Departamentos</span>
+            <span>Fotografía</span>
             <svg class="dropdown-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
               <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
             </svg>
           </summary>
           <div class="portfolio-content">
-            <video class="rounded-lg w-full aspect-video object-cover" controls>
-              <source src="susula-video.webm" type="video/webm">
-              Tu navegador no soporta el elemento de video.
-            </video>
+            <img src="IMG_0337.webp">
+            <img src="IMG_0641.webp">
+            <img src="IMG_1685.webp">
+            <img src="IMG_1710.webp">
           </div>
         </details>
         
         <!-- Additional portfolio items with videos -->
         <details class="portfolio-item">
           <summary class="portfolio-summary">
-            <span>Proyecto Café</span>
+            <span>Diseño</span>
             <svg class="dropdown-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
               <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
             </svg>
           </summary>
           <div class="portfolio-content">
-            <video class="rounded-lg w-full aspect-video object-cover" controls>
-              <source src="cafe-video.webm" type="video/webm">
-              Tu navegador no soporta el elemento de video.
-            </video>
+            <img src="Imagen de WhatsApp 2025-09-11 a las 13.55.01_954bacab.webp">
+            <img src="Imagen de WhatsApp 2025-09-11 a las 13.59.08_4ff118f6.webp">
           </div>
         </details>
-        
-        <details class="portfolio-item">
-          <summary class="portfolio-summary">
-            <span>Hotel Proyect</span>
-            <svg class="dropdown-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-              <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
-            </svg>
-          </summary>
-          <div class="portfolio-content">
-            <video class="rounded-lg w-full aspect-video object-cover" controls>
-              <source src="hotel-video.webm" type="video/webm">
-              Tu navegador no soporta el elemento de video.
-            </video>
-          </div>
-        </details>
+
       </div>
     </section>
 
@@ -252,22 +245,34 @@
         <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6 mt-6">
           <!-- Replace text with client logos -->
           <div class="h-20 grid place-items-center rounded-2xl border p-4 bg-white">
-            <img src="rapidcolecta-logo.png" alt="Rapidcolecta" class="max-h-12 max-w-full object-contain">
+            <img src="Client1.webp" alt="Rapidcolecta" class="max-h-12 max-w-full object-contain">
           </div>
           <div class="h-20 grid place-items-center rounded-2xl border p-4 bg-white">
-            <img src="susula-logo.png" alt="Susulá" class="max-h-12 max-w-full object-contain">
+            <img src="Client2.webp" alt="Susulá" class="max-h-12 max-w-full object-contain">
           </div>
           <div class="h-20 grid place-items-center rounded-2xl border p-4 bg-white">
-            <img src="cafe-logo.png" alt="Café" class="max-h-12 max-w-full object-contain">
+            <img src="Client3.webp" alt="Café" class="max-h-12 max-w-full object-contain">
           </div>
           <div class="h-20 grid place-items-center rounded-2xl border p-4 bg-white">
-            <img src="hotel-logo.png" alt="Hotel" class="max-h-12 max-w-full object-contain">
+            <img src="Client4.webp" alt="Hotel" class="max-h-12 max-w-full object-contain">
           </div>
           <div class="h-20 grid place-items-center rounded-2xl border p-4 bg-white">
-            <img src="cliente5-logo.png" alt="Cliente 5" class="max-h-12 max-w-full object-contain">
+            <img src="Client5.webp" alt="Cliente 5" class="max-h-12 max-w-full object-contain">
           </div>
           <div class="h-20 grid place-items-center rounded-2xl border p-4 bg-white">
-            <img src="cliente6-logo.png" alt="Cliente 6" class="max-h-12 max-w-full object-contain">
+            <img src="Client6.webp" alt="Cliente 6" class="max-h-12 max-w-full object-contain">
+          </div>
+          <div class="h-20 grid place-items-center rounded-2xl border p-4 bg-white">
+            <img src="Client7.webp" alt="Rapidcolecta" class="max-h-12 max-w-full object-contain">
+          </div>
+          <div class="h-20 grid place-items-center rounded-2xl border p-4 bg-white">
+            <img src="Client8.webp" alt="Susulá" class="max-h-12 max-w-full object-contain">
+          </div>
+          <div class="h-20 grid place-items-center rounded-2xl border p-4 bg-white">
+            <img src="Client9.webp" alt="Café" class="max-h-12 max-w-full object-contain">
+          </div>
+          <div class="h-20 grid place-items-center rounded-2xl border p-4 bg-white">
+            <img src="Client10.webp" alt="Hotel" class="max-h-12 max-w-full object-contain">
           </div>
         </div>
       </div>
@@ -279,13 +284,13 @@
         <div class="grid md:grid-cols-2 gap-6 mt-6">
           <div class="rounded-2xl border bg-white p-6">
             <h3 class="font-serif text-xl">Workshop: Redes que venden</h3>
-            <p class="text-neutral-700 mt-2">Estrategia, calendario, pauta y medición. Incluye plantillas.</p>
-            <a href="#contacto" class="inline-block mt-4 px-5 py-3 rounded-2xl font-medium button-bottom-left" style="background:#faa94a;color:#000">Solicitar info</a>
+            <p class="text-neutral-700 mt-2">Aprende a construir una identidad de marca sólida, crear estrategias efectivas y organizar tu contenido con calendario, pauta y métricas claras. Incluye plantillas listas para usar</p>
+            <a href="#contacto" class="inline-block mt-4 px-5 py-3 rounded-2xl font-medium button-bottom-left" style="background:#faa94a;color:#000">Quiero vender con mis redes!</a>
           </div>
           <div class="rounded-2xl border bg-white p-6">
             <h3 class="font-serif text-xl">Mini-curso: Anuncios en Meta</h3>
-            <p class="text-neutral-700 mt-2">Configura campañas orientadas a objetivos (CPC, CTR, Alcance).</p>
-            <a href="#contacto" class="inline-block mt-4 px-5 py-3 rounded-2xl font-medium bg-black text-white button-bottom-right">Quiero aprender</a>
+            <p class="text-neutral-700 mt-2">Aprende a configurar campañas orientadas a objetivos y domina métricas clave como CPC, CTR y Alcance para obtener mejores resultados.</p>
+            <a href="#contacto" class="inline-block mt-4 px-5 py-3 rounded-2xl font-medium bg-black text-white button-bottom-right">Quiero aprender!</a>
           </div>
         </div>
       </div>
@@ -350,372 +355,5 @@
     </div>
     <div class="text-center text-xs text-[#a6a6a6] py-4 border-t border-white/10">© 2025 DALA MKT.</div>
   </footer>
-
-  <script>
-    // Mobile menu functionality
-    document.addEventListener('DOMContentLoaded', function() {
-      const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-      const mobileMenu = document.querySelector('.mobile-menu');
-      
-      if (mobileMenuBtn && mobileMenu) {
-        mobileMenuBtn.addEventListener('click', function() {
-          mobileMenu.classList.toggle('hidden');
-          mobileMenu.classList.toggle('active');
-        });
-        
-        // Close menu when clicking outside
-        document.addEventListener('click', function(event) {
-          if (!event.target.closest('.mobile-menu') && 
-              !event.target.closest('.mobile-menu-btn') &&
-              mobileMenu.classList.contains('active')) {
-            mobileMenu.classList.add('hidden');
-            mobileMenu.classList.remove('active');
-          }
-        });
-      }
-      
-      // Portfolio animations
-      const portfolioItems = document.querySelectorAll('.portfolio-item');
-      portfolioItems.forEach(item => {
-        item.addEventListener('toggle', function() {
-          if (this.open) {
-            const content = this.querySelector('.portfolio-content');
-            content.style.animation = 'fadeIn 0.5s ease forwards';
-          }
-        });
-      });
-    });
-  </script>
-  
-  <style>
-    :root {
-      --c-black: #000;
-      --c-white: #fff;
-      --c-gray: #a6a6a6;
-      --c-orange: #faa94a;
-    }
-
-    /* Base styles */
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 1rem;
-      padding: 0.75rem 1.25rem;
-      font-weight: 500;
-      transition: all 0.3s ease;
-    }
-
-    /* Navigation buttons */
-    .nav-button {
-      padding: 15px 20px;
-      background-color: #fdfdfd;
-      color: black;
-      text-decoration: none;
-      transition: all 0.3s ease;
-      font-size: 1rem;
-      border: 2px solid transparent;
-      text-align: center;
-      display: inline-block;
-      box-sizing: border-box;
-      opacity: 0;
-      animation: fadeIn 0.5s ease-out forwards;
-    }
-
-    .nav-button:hover {
-      background-color: #faa94a;
-      transform: translateY(-3px) scale(1.05);
-      border: 2px solid #000000;
-    }
-
-    .nav-button:active {
-      transform: translateY(0) scale(1);
-      box-shadow: none;
-    }
-
-    /* Mobile nav buttons */
-    .nav-button-mobile {
-      padding: 12px 16px;
-      background-color: #f8f8f8;
-      color: black;
-      text-decoration: none;
-      transition: all 0.3s ease;
-      font-size: 1rem;
-      border-radius: 8px;
-      text-align: center;
-      display: block;
-    }
-
-    .nav-button-mobile:hover {
-      background-color: #faa94a;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-
-    /* Hero buttons */
-    .button-top-left, .button-top-right {
-      border-radius: 25px;
-      padding: 0.75rem 1.5rem;
-      font-weight: 500;
-      text-decoration: none;
-      transition: all 0.3s ease;
-    }
-
-    .button-top-left {
-      background-color: #faa94a;
-      color: #000000;
-    }
-
-    .button-top-right {
-      background-color: #fdfdfd;
-      color: #000000;
-    }
-
-    .button-top-left:hover, .button-top-right:hover, .button-bottom-left:hover, .button-bottom-right:hover{
-      transform: translateY(-3px);
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    }
-
-    .button-bottom-left{
-      background-color: #faa94a;
-      color: #000000;
-    }
-
-    .button-bottom-right{
-      background-color: #000000;
-      color: #f0f0f0;
-    }
-
-    /* Service cards */
-    .services-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 1.5rem;
-    }
-
-    @media (min-width: 768px) {
-      .services-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-
-    @media (min-width: 1024px) {
-      .services-grid {
-        grid-template-columns: repeat(3, 1fr);
-      }
-    }
-
-    .service-card {
-      border-radius: 1rem;
-      box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
-      border: 1px solid #e5e5e5;
-      background-color: white;
-      padding: 1.5rem;
-      height: 100%;
-      min-height: 200px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-
-    /* Flip card styles */
-    .flip-card {
-      background-color: transparent;
-      perspective: 1000px;
-      height: 100%;
-      min-height: 200px;
-    }
-
-    .flip-card-inner {
-      position: relative;
-      width: 100%;
-      height: 100%;
-      text-align: center;
-      transition: transform 0.6s;
-      transform-style: preserve-3d;
-    }
-
-    .flip-card:hover .flip-card-inner {
-      transform: rotateY(180deg);
-    }
-
-    .flip-card-front, .flip-card-back {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      -webkit-backface-visibility: hidden;
-      backface-visibility: hidden;
-      border-radius: 1rem;
-      padding: 1.5rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-
-    .flip-card-front {
-      background-color: #faa94a;
-      color: black;
-    }
-
-    .flip-card-back {
-      background-color: white;
-      color: black;
-      transform: rotateY(180deg);
-      box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
-      border: 1px solid #e5e5e5;
-    }
-
-    /* Ensure all service cards have equal height */
-    .services-grid > * {
-      display: flex;
-    }
-
-    /* WhatsApp FAB */
-    .whatsapp-fab {
-      position: fixed;
-      right: 1rem;
-      bottom: 1rem;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-      border-radius: 50%;
-      padding: 1rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-decoration: none;
-      transition: all 0.3s ease;
-      z-index: 40;
-    }
-
-    .whatsapp-fab:hover {
-      transform: scale(1.1);
-      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
-    }
-
-    /* Rounded Tally iframe container */
-    .tally-container {
-      border-radius: 1rem;
-      overflow: hidden;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    }
-
-    /* Portfolio animations */
-    .portfolio-item {
-      border-radius: 1rem;
-      border: 1px solid #e5e5e5;
-      background-color: white;
-      margin-top: 1rem;
-      overflow: hidden;
-      transition: all 0.3s ease;
-    }
-
-    .portfolio-item[open] {
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    }
-
-    .portfolio-summary {
-      padding: 1.5rem;
-      cursor: pointer;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      font-weight: 500;
-      list-style: none; /* Remove default arrow in Firefox */
-      transition: background-color 0.3s ease;
-    }
-
-    .portfolio-summary:hover {
-      background-color: #f8f8f8;
-    }
-
-    .portfolio-summary::-webkit-details-marker {
-      display: none; /* Remove default arrow in Chrome */
-    }
-
-    .dropdown-arrow {
-      width: 1.25rem;
-      height: 1.25rem;
-      transition: transform 0.3s ease;
-    }
-
-    .portfolio-item[open] .dropdown-arrow {
-      transform: rotate(180deg);
-    }
-
-    .portfolio-content {
-      padding: 0 1.5rem 1.5rem;
-      animation: fadeIn 0.5s ease forwards;
-    }
-
-    /* Mobile menu styles */
-    .mobile-menu-btn {
-      display: none;
-    }
-
-    @media (max-width: 767px) {
-      .mobile-menu-btn {
-        display: block;
-      }
-      
-      .mobile-menu {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-        z-index: 100;
-      }
-      
-      .mobile-menu.active {
-        display: block;
-      }
-    }
-
-    /* Additional animations */
-    @keyframes slideDown {
-      from {
-        opacity: 0;
-        transform: translateY(-10px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-      }
-      to {
-        opacity: 1;
-      }
-    }
-
-    .tally-container {
-      border-radius: 1rem;
-      overflow: hidden;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    }
-    
-    /* Video background for hero section */
-    .video-background {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: -1;
-      overflow: hidden;
-    }
-    
-    .video-background video {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-  </style>
 </body>
 </html>
