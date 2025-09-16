@@ -50,21 +50,28 @@
 
   <main id="inicio">
     <section class="py-16 md:py-20 text-white relative overflow-hidden">
-      <div>
-        <h1 class="text-4xl md:text-5xl font-serif leading-tight mx-auto" style="max-width: 24ch">
-          Creatividad que <span style="color:#faa94a">convierte</span>
-        </h1>
-        <p class="mt-4 text-[#f0f0f0] mx-auto" style="max-width: 40ch">
-          Identidad, contenido y campañas con métricas claras para que tu negocio crezca en Mérida.
-        </p>
-        <div class="mt-6 flex flex-wrap gap-3 justify-center">
-          <a href="#portafolio" class="button-top-left">Ver portafolio</a>
-          <a href="https://wa.me/529993960502?text=Hola%20DALA%20MKT%2C%20quiero%20impulsar%20mi%20marca%20en%20redes.&utm_source=preview&utm_medium=hero&utm_campaign=cta" class="button-top-right">Escríbenos por Whats</a>
+      <div class="video-background absolute inset-0 w-full h-full">
+        <video autoplay muted loop playsinline class="w-full h-full object-cover">
+          <source src="portada.webm" type="video/webm">
+          <!-- Fallback image if video doesn't load -->
+          <div class="absolute inset-0 bg-black"></div>
+        </video>
+        <div class="absolute inset-0 bg-black opacity-60"></div>
+      </div>
+      
+      <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-8 items-center relative z-10">
+        <div class="text-center md:text-left">
+          <h1 class="text-4xl md:text-5xl font-serif leading-tight mx-auto md:mx-0" style="max-width: 24ch">Creatividad que <span style="color:#faa94a">convierte</span></h1>
+          <p class="mt-4 text-[#f0f0f0] mx-auto md:mx-0" style="max-width: 40ch">Identidad, contenido y campañas con métricas claras para que tu negocio crezca en Mérida.</p>
+          <div class="mt-6 flex flex-wrap gap-3 justify-center md:justify-start">
+            <a href="#portafolio" class="button-top-left">Ver portafolio</a>
+            <a href="https://wa.me/529993960502?text=Hola%20DALA%20MKT%2C%20quiero%20impulsar%20mi%20marca%20en%20redes.&utm_source=preview&utm_medium=hero&utm_campaign=cta" class="button-top-right">Escríbenos por Whats</a>
+          </div>
+          <ul class="mt-6 text-sm text-[#f0f0f0] space-y-1 mx-auto md:mx-0" style="max-width: 40ch">
+            <li>↳ [Ejemplo] CPC desde $0.55 MXN y 633 clics.</li>
+            <li>↳ Reporte de métricas mensual para decidir próximos pasos.</li>
+          </ul>
         </div>
-        <ul class="mt-6 text-sm text-[#f0f0f0] space-y-1 mx-auto" style="max-width: 40ch">
-          <li>↳ [Ejemplo] CPC desde $0.55 MXN y 633 clics.</li>
-          <li>↳ Reporte de métricas mensual para decidir próximos pasos.</li>
-        </ul>
       </div>
     </section>
 
