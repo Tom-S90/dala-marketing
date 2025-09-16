@@ -413,3 +413,9 @@
 h1 {
   background: none;
 }
+
+.chatIcon{
+  max-width: 20px;
+  max-height: 20px;
+  border-radius: 50%;
+}
